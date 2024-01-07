@@ -1,0 +1,95 @@
+@import "header.css";
+@import "footer.css";
+@import "animation.css";
+
+.heading{
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.accordion-item{
+    background-color: white;
+    padding: 1%;
+    margin: 1%;
+}
+.accordion-item-header{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+}
+.accordion-item-header::after{
+    content: "\25BE";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+.accordion-item-header.active::after{
+    transform: rotate(180deg);
+}
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+.accordion-item-body-content{
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem;
+    border-top: 3px solid rgb(0, 0, 0);
+    border-image: linear-gradient(to right, transparent, rgb(0, 0, 0), transparent) 1;
+}
+.accordion-img{
+    margin-left: 1%;
+    height: 150px;
+}
+.section-topic{
+    font-weight: 500;
+}
+.footer{
+    top: 20px;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.i1{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.i2{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.i3{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.i4{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}

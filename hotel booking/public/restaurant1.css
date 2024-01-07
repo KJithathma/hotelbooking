@@ -1,0 +1,210 @@
+@import "footer.css";
+@import "header.css";
+@import "animation.css";
+
+/*main flex container styles*/
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+/*body items*/
+
+.OpeningHoursAndMenuAndExtraInfoAndImages{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.OpeningHours:hover, .Menu:hover, .ExtraInfo:hover, .restaurantgallery:hover{
+    box-shadow: 0px 4px 0px #333;
+}
+.description:hover, .mainImage:hover{
+    box-shadow: 4px 4px 4px black;
+}
+.OpeningHours, .Menu, .ExtraInfo, .restaurantgallery{
+    border: 2px 2px 2px black;
+}
+.mainImage, .description, .OpeningHours, .Menu, .ExtraInfo, .restaurantgallery, .restaurantgallerycontent{
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    width: 90%;
+    align-items: center;
+    max-width: 85%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.restaurantgallerycontent{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.mainImage{
+    padding: 0;
+    margin-top: 0;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.mainimg, .restaurantgallerycover{
+    width: 90%;
+}
+.description, .Menu{
+    text-align: justify;
+}
+.restaurantgallerycontent{
+    box-shadow: none;
+}
+.OpeningHoursh4{
+    text-align: center;
+}
+.menuimg{
+    width: 150px;
+    height: 150px;
+}
+.dressimg, .cuisineimg, .locationimg{
+    width: 40px;
+    height: 40px;
+    border:1px solid black;
+    border-radius: 50%;
+    padding:2px;
+}
+.cuisinetext{
+    text-align: center;
+}
+.description{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.footer{
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+ 
+@media screen and (max-width: 768px) {
+    /*body items*/
+    .mainImage, .description, .OpeningHours, .Menu, .ExtraInfo, .restaurantgallery, .restaurantgallerycontent{
+        display: flex;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px gray;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 2%;
+        width: 100%;
+        align-items: center;
+        max-width: 96%;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .mainImage:hover, .description:hover, .OpeningHours:hover, .Menu:hover, .ExtraInfo:hover, .restaurantgallery:hover{
+        box-shadow: 4px 4px 4px black;
+    }
+    .mainImage{
+        padding: 0;
+    }
+    .mainimg, .restaurantgallerycover{
+        width: 100%;
+        align-content: center;
+    }
+    .description{
+        text-align: justify;
+    }
+    .OpeningHoursAndMenuAndExtraInfoAndImages{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        width: 100%;
+    }
+    .Menu{
+        text-align: center;
+    }
+    .restaurantgallerycontent{
+        box-shadow: none;
+    }
+    .OpeningHoursh4{
+        text-align: center;
+    }
+    .menuimg{
+        width: 100px;
+        height: 100px;
+    }
+    .dressimg, .cuisineimg, .locationimg{
+        width: 40px;
+        height: 40px;
+        border:1px solid black;
+        border-radius: 50%;
+        padding:2px;
+    }
+    .cuisinetext{
+        text-align: center;
+    }
+    .OpeningHours{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .Menu{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .ExtraInfo{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .restaurantgallery{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .footer{
+        opacity: 0;
+        animation-name: header-slide;
+        animation-duration: 2s;
+        animation-delay: 4.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+}

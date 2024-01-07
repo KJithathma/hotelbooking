@@ -1,0 +1,85 @@
+/*entire body styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body{
+    background-color: #ccc;
+    font-family: 'monserrat', sans-serif;
+}
+
+/*main logo styles*/
+.logo, .logoimg{
+    display: flex;
+    background-color: #ccc;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    
+}
+.logoimg{
+    width: 30rem;
+    position: relative;
+    bottom: 8px;
+} 
+
+
+/*navigation bar styles*/
+nav{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 30px;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding-top: 3px;
+    flex: 1 1 0;
+    height: 1.6rem;
+}
+nav li{
+    align-items: center;
+    font-size: 1.3rem;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: yellow;
+}
+.menu-img{
+    width: 1.5rem;
+}
+.menu-img-container{
+    max-width: 5%;
+}
+
+.heading{
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px){
+    .logoimg{
+        width: 70%;
+    }
+}

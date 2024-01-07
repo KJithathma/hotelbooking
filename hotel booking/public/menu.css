@@ -1,0 +1,159 @@
+@import "footer.css";
+@import "header.css";
+@import "animation.css";
+@import "sideNavBar.css";
+
+/*main flex container styles*/
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+    align-items: center;
+}
+
+/*body items*/
+.startersAndmaincoursesAndsaladsAndDessertsAndDrinks{
+    position: relative;
+    top: -3rem;
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.starters:hover, .maincourses:hover, .salads:hover, .Desserts:hover, .Drinks:hover{
+    box-shadow: 0px 4px 0px #333;
+}
+.menutopic:hover{
+    box-shadow: 4px 4px 4px black;
+}
+.starters, .maincourses, .salads, .Desserts, .Drinks{
+    border: 2px 2px 2px black;
+}
+.starters, .maincourses, .salads, .Desserts, .Drinks{
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    max-width: 96%;
+    text-align: center;
+    justify-content:initial;
+    flex-wrap: wrap;
+}
+.startersh3{
+    text-align: center;
+}
+i{
+    color:grey;
+}
+footer{
+    position: relative;
+    top: -3rem;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@media screen and (max-width: 768px) {
+    /*body items*/
+    .starters, .maincourses, .salads, .Desserts, .Drinks{
+        display: flex;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px gray;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 2%;
+        width: 100%;
+        align-items: center;
+        max-width: 96%;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .starters:hover, .maincourses:hover, .salads:hover, .Desserts:hover, .Drinks:hover{
+        box-shadow: 4px 4px 4px black;
+    }
+    .Desserts{
+        width: 100%;
+        align-content: center;
+    }
+    .startersAndmaincoursesAndsaladsAndDessertsAndDrinks{
+        top: -1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        width: 100%;
+    }
+    .maincourses{
+        text-align: center;
+    }
+    .startersh3{
+        text-align: center;
+    }
+    i{
+        color:grey;
+    }
+    .starters{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .maincourses{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .salads{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .Desserts{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .Drinks{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .footer{
+        top: 3rem;
+        opacity: 0;
+        animation-name: header-slide;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+}

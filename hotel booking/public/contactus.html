@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+    <link rel="stylesheet" href="sidebar.css" type="text/css">
+    <script language="javascript" type="text/javascript" src="formValidation.js">
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logoimg"><img src="IMAGES/nameblack2.jpg" class="logoimg"></a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <a href="#" class="menu-img-container"><li><img src="IMAGES/menu.png" class="menu-img" id="menu-btn"></li></a>
+                <a href="index.html"> <li>Home</li></a> 
+                <a href="room.html"><li>Booking</li></a>
+                <a href="restaurant.html"><li>Restaurant</li></a>
+                <a href="restaurant1.html"><li>Menu</li></a>
+                <a href="imageGallery.html"> <li> Our Gallery</li></a>
+                <a href="aboutus.html" ><li> About Us </li></a>
+                <a href="contactus.html"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="sidebar" id="sidebar">
+            <div class="menu-content">
+                <div class="menu-text"><p>Menu</p></div>
+            </div>
+            <ul class="listings">
+                <a href="index.html" class="navigate-link">
+                    <li class="list-item">
+                        <img src="IMAGES/home.png" class="navigation-icon">
+                        Home
+                    </li>
+                </a>
+                <a href="restaurant.html" class="navigate-link">
+                    <li class="list-item">
+                        <img src="IMAGES/restaurant.png" class="navigation-icon">
+                        Restaurant
+                    </li>
+                </a>
+                <a href="room.html" class="navigate-link">
+                    <li class="list-item">
+                        <img src="IMAGES/rooms.png" class="navigation-icon">
+                        Rooms
+                    </li>
+                </a>
+                <a href="imageGallery.html" class="navigate-link">
+                    <li class="list-item">
+                        <img src="IMAGES/image-gallery.png" class="navigation-icon">
+                        Gallery
+                    </li>
+                </a>
+                <a href="contactus.html" class="navigate-link">
+                    <li class="list-item">
+                        <img src="IMAGES/contact-us.png" class="navigation-icon">
+                        Contact Us
+                    </li>
+                </a>
+                <a href="aboutus.html" class="navigate-link">
+                    <li class="list-item">
+                        <img src="IMAGES/about-us.png" class="navigation-icon">
+                        About Us
+                    </li>
+                </a>
+            </ul>
+            <div class="close-container" id="close-menu-btn">
+                <img src="IMAGES/exit.png" class="exit">
+                <p class="close-btn-text">Close Menu</p>
+            </div>
+        </div>
+    </div>
+    <h3 class="heading">CONTACT US</h3>
+    
+    <section class="mainflex">
+        <div class="mainImage">
+            <img class="mainimg" src="IMAGES/mainImgcontactus.jpg">
+        </div>
+        <div class="main-component">
+            <div class="faq">
+            <h3>FAQ</h3>
+            <div>
+                <p>
+                    In order to get an answer for your question as quick as possible
+                    we have gathered the most frequently asked questions here.
+                </p>
+                <div class="faqcontainer">
+                    <a href="#" class="faqcomponent">Reservation</a>
+                    <a href="#" class="faqcomponent">Pricing</a>
+                    <a href="#" class="faqcomponent">Policies</a>
+                    <a href="#" class="faqcomponent">Events</a>
+                    <a href="#" class="faqcomponent">Covid-19</a>
+                    <a href="#" class="faqcomponent">Other</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="askaquestion">
+            <h3>ASK A QUESTION</h3>
+            <div>
+                <form name="ask">
+                    <textarea class="input" name="question" type="text" placeholder="How can we help you?"></textarea><br/>
+                    <input class="input" name="email" type="text" placeholder="Your email address"><br/>
+                    <button class="button animating" onClick="validateAsk()">Send</button>
+                </form>
+                <p>We will provide you with answers soon through your email</p>
+            </div>
+        </div>
+        <div class="availableon">
+            <h3>WE ARE AVAILABLE ON</h3>
+            <div>
+                <div>
+                    <a href="#"><img class="contactusicon" src="IMAGES/fbiconcontactus.png"></a>
+                    <a href="#"><img class="contactusicon" src="IMAGES/instaiconcontactus.png"></a>
+                </div>
+                <div>
+                    <a href="#"><img class="contactusicon" src="IMAGES/twittericoncontactus.png"></a>
+                    <a href="#"><img class="contactusicon" src="IMAGES/mailiconcontactus.png"></a>
+                </div>
+                <p>Address: 1/123, Main Road, Old City, Kandy</p>
+                <p>Telephone: 081-4512567, 081-5659371</p>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footerflex">
+                <div class="footercenterflex footflexcommon">
+                    <h3>LEGAL STUFF</h3>
+                    <a href="#" class="footerlink"><div class="footerdiv"><p>Hotel Registration</p></div></a>
+                    <a href="#" class="footerlink"><div class="footerdiv"><p>Terms and Conditions</p></div></a>
+                    <a href="#" class="footerlink"><div class="footerdiv"><p>Privacy Policy</p></div></a>
+                    <a href="#" class="footerlink"><div class="footerdiv"><p>Hotel Rules Declaration</p></div><br/></a>
+                    <h3>REACH US VIA QUICK LINKS</h3>
+                    <div class="footercontacticons">
+                        <a href="#"><img class="contacticon" src="IMAGES/fbicon.png"></a>
+                        <a href="#"><img class="contacticon" src="IMAGES/instaicon.png"></a>
+                        <a href="#"><img class="contacticon" src="IMAGES/twittericon.png"></a>
+                        <a href="#"><img class="contacticon" src="IMAGES/mailicon.png"></a>
+                    </div>
+                </div>
+                <div class="footerrightflex footflexcommon">
+                    <a href="index.html"><img src="IMAGES/nameblack.jpg" class="footerlogo"></a>
+                </div>
+            </div>
+            <p class="footerend">The Marriott 2024© All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="sidemenu.js"></script>
+</body>
+</html>

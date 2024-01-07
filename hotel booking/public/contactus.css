@@ -1,0 +1,167 @@
+@import "footer.css";
+@import "header.css";
+@import "animation.css";
+
+.mainflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+}
+.mainImage:hover{
+    box-shadow: 4px 4px 4px black;
+}
+.mainImage{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    max-width: 96%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.mainimg{
+    width: 100%;
+}
+.main-component{
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.askaquestion, .availableon, .faq{
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    max-width: 96%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input{
+    margin: 1%;
+}
+.button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: .125em ;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: lighter;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+.askaquestion:hover, .availableon:hover, .faq:hover{
+    box-shadow: 0px 4px 0px black;
+}
+.faqcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faqcomponent{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    align-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px gray;
+    text-decoration: none;
+}
+.faqcomponent:hover, .button:hover{
+    color: yellow;
+    background-color: #555;
+}
+.contactusicon{
+    width: 20%;
+    padding: 1%;
+}
+
+.footer{
+    position: relative;
+    top: -2rem;
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px){
+    .mainflex{
+        flex-direction: column;
+    }
+    .main-component{
+        flex-direction: column;
+        animation-name: none;
+        opacity: 1;
+    }
+    .contactusicon{
+        width: 10%;
+    }
+    .askaquestion:hover, .availableon:hover, .faq:hover{
+        box-shadow: 4px 4px 4px black;
+    }
+    .faq{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .askaquestion{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .availableon{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .footer{
+        position: relative;
+        top: -2rem;
+        opacity: 0;
+        animation-name: header-slide;
+        animation-duration: 3s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+}

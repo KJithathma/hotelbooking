@@ -1,0 +1,204 @@
+﻿@import "footer.css";
+@import "header.css";
+@import "animation.css";
+
+/*body*/
+.description p{
+    padding-bottom: 1rem;
+    margin: 0; /*t r b l*/
+    text-align: justify;
+}
+
+/*images of the resturants*/
+/*image discription*/
+.resp {
+    margin-top: 1rem;
+    color: #8A6D11;
+    font-family: Cavolini;
+    text-align: center;
+    font-size:20px;
+}
+.resimg {
+    width: 65%;
+    height: 65%;
+    margin-bottom: 0;
+    /*align-items: center;*/
+}
+
+/*view more- below the image*/
+.view {
+    text-align: center;
+    margin-bottom: 10px;
+}
+    .view a {
+        color: black;
+        padding: 15px;
+    }
+        .view a:hover {
+            color: #08536f;
+        }
+
+/*main Image*/
+.mainImage {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    padding-left: 0%;  /*2% */
+    padding-right: 2%;
+    margin-top: 2%;
+    width: 90%;
+    align-items: center;
+    max-width: 96%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.description:hover, .mainImage:hover, .resp:hover{
+    box-shadow: 4px 4px 4px black;
+}
+.mainImage, .description{
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    max-width: 96%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainImage{
+    padding: 0%;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 0;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.mainimg{
+    width: 100%;
+}
+.menu-container{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.resp{
+    min-width: 30rem;
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.resp p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.view a{
+    font-size: 1rem;
+}
+.resimg{
+    width: 25rem;
+    height: 16rem;
+    padding: 1rem;
+    padding-top: 0;
+}
+.description{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.menu-container{
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.footer{
+    opacity: 0;
+    animation-name: header-slide;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-container{
+        flex-direction: column;
+        overflow-x: hidden;
+        animation-name: none;
+        opacity: 1;
+    }
+    .rest1{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .rest2{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .rest3{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .rest4{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .rest5{
+        opacity: 0;
+        animation-name: slide;
+        animation-duration: 3s;
+        animation-delay: 4.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .footer{
+        opacity: 0;
+        animation-name: header-slide;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    .resp:hover{
+        box-shadow: 4px 4px 4px black;
+    }
+}

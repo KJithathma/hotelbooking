@@ -1,0 +1,27 @@
+@keyframes slide{
+    0%{
+        opacity: 0;
+        position: relative;
+    }
+    1%{
+        left: 500px;
+    }
+    100%{
+        opacity: 1;
+        left: -500px;
+    }
+}
+
+@keyframes header-slide{
+    0%{
+        opacity: 0;
+        position: relative;
+    }
+    1%{
+        left: 500px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
